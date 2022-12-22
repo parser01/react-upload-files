@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import "./App.css";
 
@@ -22,7 +23,7 @@ function App() {
 		const formData = new FormData();
 		formData.append("userId", 1);
 		formData.append("file", files[0]);
-		// axios.post("url", formData);
+		axios.post("some url", formData);
 		setIsDragged(false);
 	};
 
